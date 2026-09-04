@@ -142,10 +142,7 @@
             position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
             pointer-events: none; z-index: -2; overflow: hidden;
         }
-        .cloud {
-            position: absolute; background: #FFF; border-radius: 200px;
-            filter: blur(15px); opacity: 0.1; animation: drift linear infinite;
-        }
+        .cloud { position: absolute; background: #FFF; border-radius: 200px; filter: blur(15px); opacity: 0.1; animation: drift linear infinite; }
         .cloud::before, .cloud::after { content: ''; position: absolute; background: #FFF; border-radius: 50%; }
         .cloud-1 { width: 300px; height: 100px; top: 15%; left: -350px; animation-duration: 45s; }
         .cloud-1::before { width: 150px; height: 150px; top: -70px; left: 40px; }
@@ -226,7 +223,7 @@
             margin-bottom: 0.5rem; box-shadow: var(--shadow-sm);
             border-radius: 2px;
             position: relative;
-            margin-top: 85px; 
+            margin-top: 0.4rem; 
         }
         
         .avatar-mini {
@@ -786,6 +783,8 @@
             .music-layout { height: auto; min-height: 100%; justify-content: flex-start; padding-bottom: 2rem; }
             .music-content { flex-direction: column; justify-content: center; gap: 1.5rem; }
             .v-music-stacked { max-width: 350px; width: 90%; }
+
+            .gomi-extra-icons { transform: none; }
         }
 
         @media (max-width: 600px) {
@@ -803,6 +802,24 @@
 
         .section-title, .hero-subtitle, .pink-clock, .btn-glass-pink, .btn-click-me, .nav-link {
             font-family: 'Road Rage', cursive !important;
+        }
+
+        .gomi-extra-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            width: fit-content;
+            margin: 85px auto 0 auto;
+            transform: translateX(-240px);
+        }
+        .gomi-extra-icon {
+            height: 18px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+            filter: none !important;
         }
     </style>
 </head>
@@ -842,6 +859,11 @@
         <div class="tab-content active" id="tab-hero">
             <div class="hero-layout">
                 <div class="hero-content">
+                    <div class="gomi-extra-icons">
+                        <img class="gomi-extra-icon" src="https://xat.com/images/smw/flag/sv.png" alt="Bandera">
+                        <img class="gomi-extra-icon" src="https://xatimg.com/image/qCtMyQTHdADr.png" alt="Icono">
+                    </div>
+
                     <div class="status-container">
                         <div class="avatar-mini">
                             <img src="https://xatimg.com/image/kNKzeLA5K76k.png" alt="Avatar">
@@ -929,7 +951,7 @@
             <div class="music-layout" style="justify-content: flex-start; height: auto; min-height: 100%; padding-top: 5vh; padding-bottom: 8vh;">
                 <div class="section-header">
                     <h2 class="section-title">EVIDENCE</h2>
-                    <p class="hero-description" style="margin: 0 auto; margin-bottom: 0.5rem;">Crime Scene Photos.</p>
+                    <p class="hero-description" style="margin: 0 auto; margin-bottom: 0.5rem;">Barbie muerete de envidia.</p>
                     
                     <div style="font-size: 0.85rem; color: var(--accent-main); display: flex; align-items: center; justify-content: center; gap: 6px; font-weight: 600; opacity: 0.8; margin-bottom: 1rem;">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/><path d="m12 19-7-7 7-7"/></svg>
