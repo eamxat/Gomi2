@@ -223,7 +223,7 @@
             margin-bottom: 0.5rem; box-shadow: var(--shadow-sm);
             border-radius: 2px;
             position: relative;
-            margin-top: 0.4rem; 
+            margin-top: 85px; 
         }
         
         .avatar-mini {
@@ -784,7 +784,6 @@
             .music-content { flex-direction: column; justify-content: center; gap: 1.5rem; }
             .v-music-stacked { max-width: 350px; width: 90%; }
 
-            .gomi-extra-icons { transform: none !important; }
         }
 
         @media (max-width: 600px) {
@@ -808,11 +807,10 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 6px;
             width: fit-content;
-            margin: 85px auto 0 auto;
-            transform: translateX(-240px);
+            margin: 0.5rem 0 0 0;
         }
         .gomi-extra-icon {
             height: 18px;
@@ -820,6 +818,11 @@
             object-fit: contain;
             display: block;
             filter: none !important;
+        }
+        .gomi-extra-text {
+            font-family: 'Special Elite', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
         }
     </style>
 </head>
@@ -859,11 +862,6 @@
         <div class="tab-content active" id="tab-hero">
             <div class="hero-layout">
                 <div class="hero-content">
-                    <div class="gomi-extra-icons">
-                        <img class="gomi-extra-icon" src="https://xat.com/images/smw/flag/sv.png" alt="Bandera">
-                        <img class="gomi-extra-icon" src="https://xatimg.com/image/qCtMyQTHdADr.png" alt="Icono">
-                    </div>
-
                     <div class="status-container">
                         <div class="avatar-mini">
                             <img src="https://xatimg.com/image/kNKzeLA5K76k.png" alt="Avatar">
@@ -891,6 +889,12 @@
                             <p class="hero-subtitle" id="quote-title">GOMI</p>
                             <p class="hero-description" id="quote-desc">La MamiChula</p>
                         </div>
+                    </div>
+
+                    <div class="gomi-extra-icons">
+                        <img class="gomi-extra-icon" src="https://xat.com/images/smw/flag/sv.png" alt="Bandera">
+                        <span class="gomi-extra-text">Gemini</span>
+                        <img class="gomi-extra-icon" src="https://xatimg.com/image/mhcjsG8kEoUi.png" alt="Icono Zodiaco">
                     </div>
                     
                     <div class="gemini-block">
